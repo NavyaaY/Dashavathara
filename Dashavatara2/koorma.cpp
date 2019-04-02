@@ -5,17 +5,60 @@
 #include"FUNCTIONS.h"
 void koormadisp()
 {
+	glBegin(GL_POLYGON);
+	glColor3f(0.1,0.9,1);
+	glVertex2f(-100,0);
+	glColor3f(0.2,0.5,0.9);
+	glVertex2f(-100,100);
+	glColor3f(0.2,0.7,0.8);
+	glVertex2f(100,100);
+	glColor3f(0.1,0.9,1);
+	glVertex2f(100,0);
+	glEnd();
 	int i,r=50;
 	glBegin(GL_POLYGON);
-	glColor4f(0.1,0.5,0,0);
+	glColor3f(0.6,0.4,0);
 	for(i=0;i<360;i++)
 	{
 		glVertex2f(r*cos(i),r*sin(i));
 	}
 	glEnd();
 	glFlush();
-	rectangle(-35,-100,-100,-100,-100,100,-35,100,1.0,1.0,1.0);
-	rectangle(-100,0,100,0,100,-100,-100,-100,1.0,1.0,1.0);
-	rectangle(-100,0,100,0,100,-100,-100,-100,1.0,1.0,1.0);	
+//	rectangle(-35,-100,-100,-100,-100,100,-35,100,1.0,1.0,1.0);
+	rectangle(-100,0,100,0,100,-100,-100,-100,0.1,0.6,0.9);
+	rectangle(0,20,0,30,-10,30,-10,20,0.6,0.3,0.1);
+	rectangle(10,20,10,30,20,30,20,20,0.6,0.3,0.1);
+	rectangle(-10,10,-10,20,-20,20,-20,10,0.6,0.3,0.1);
+	rectangle(0,0,0,10,-10,10,-10,0,0.6,0.3,0.1);
+	rectangle(0,10,0,20,10,20,10,10,0.6,0.3,0.1);
+	rectangle(20,10,20,20,30,20,30,10,0.6,0.3,0.1);
+	rectangle(10,0,10,10,20,10,20,0,0.6,0.3,0.1);
+	rectangle(30,0,30,10,40,10,40,0,0.6,0.3,0.1);
+	rectangle(-20,0,-20,10,-30,10,-30,0,0.6,0.3,0.1);
+	triangle(-20,35,5,100,45,35,0.6,0.5,0);
+	triangle(0,35,25,90,60,35,0.6,0.8,0.2);
+	rectangle(-20,0,-25,-10,-20,-10,-10,0,0.0,0.0,0.0);
+	rectangle(30,0,23,-15,28,-15,35,0,0,0,0);
+	rectangle(-35,0,-35,15,-60,15,-60,0,0.6,0.4,0);
+	triangle(-60,15,-50,25,-50,0,0.6,0.4,0);
+	rectangle(-50,15,-50,25,-35,25,-35,15,0.6,0.4,0);
+	black_line(-60,15,-50,15);
+	rectangle(-50,20,-50,24,-53,24,-53,20,0,0,0);
+	glBegin(GL_POLYGON);
+	glColor3f(0.6,0.4,0);
+	glVertex2f(-60,0);
+	glVertex2f(-61,2);
+	glVertex2f(-61,3);
+	glVertex2f(-62,4);
+	glVertex2f(-62,6);
+	glVertex2f(-63,7);
+	glVertex2f(-63,8);
+	glVertex2f(-63,9);
+	glVertex2f(-63,10);
+	glVertex2f(-62,11);
+	glVertex2f(-62,12);
+	glVertex2f(-61,14);
+	glVertex2f(-60,15);
+	glEnd();
 	 glFlush();
 }	

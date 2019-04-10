@@ -93,6 +93,10 @@ SOURCE=.\koorma.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\krish.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\line.cpp
 # End Source File
 # Begin Source File

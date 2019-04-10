@@ -11,7 +11,8 @@ void myInit()
 	glClear(GL_COLOR_BUFFER_BIT);
 	glClearColor(1.0,1.0,1.0,0.0);
 	glMatrixMode(GL_PROJECTION);
-	glPointSize(50.0);
+	glLoadIdentity();
+	glPointSize(5.0);
 	glLineWidth(2.0);
 	gluOrtho2D(-100,100,-100,100);
 }
@@ -23,6 +24,6 @@ void main(int argc,char **argv)
 	glutInitWindowSize(50,50);
 	glutCreateWindow("Certificate");
 	myInit(); 
-	glutDisplayFunc(koormadisp);
+	glutDisplayFunc(krishdisp);
 	glutMainLoop();
 }

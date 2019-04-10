@@ -3,62 +3,127 @@
 #include<GL/glu.h>
 #include<math.h>
 #include"FUNCTIONS.h"
+#include <stdlib.h> 
+	float i;
 void koormadisp()
 {
+//	glClear(GL_COLOR_BUFFER_BIT);
+	
+	i-=1;
+	if(i>(-100))
+	{
 	glBegin(GL_POLYGON);
-	glColor3f(0.1,0.9,1);
+	glColor3f(1,1,1);
 	glVertex2f(-100,0);
-	glColor3f(0.2,0.5,0.9);
+	glColor3f(0.8,0.3,0.0);
 	glVertex2f(-100,100);
-	glColor3f(0.2,0.7,0.8);
+	glColor3f(1,1,1);
 	glVertex2f(100,100);
-	glColor3f(0.1,0.9,1);
+	glColor3f(0.8,0.3,0.0);
 	glVertex2f(100,0);
 	glEnd();
-	int i,r=50;
+	int j,r=50;
 	glBegin(GL_POLYGON);
 	glColor3f(0.6,0.4,0);
-	for(i=0;i<360;i++)
+	for(j=0;j<360;j++)
 	{
-		glVertex2f(r*cos(i),r*sin(i));
+		glVertex2f(r*cos(j)+i,r*sin(j));
 	}
 	glEnd();
 	glFlush();
+
 //	rectangle(-35,-100,-100,-100,-100,100,-35,100,1.0,1.0,1.0);
 	rectangle(-100,0,100,0,100,-100,-100,-100,0.1,0.6,0.9);
-	rectangle(0,20,0,30,-10,30,-10,20,0.6,0.3,0.1);
-	rectangle(10,20,10,30,20,30,20,20,0.6,0.3,0.1);
-	rectangle(-10,10,-10,20,-20,20,-20,10,0.6,0.3,0.1);
-	rectangle(0,0,0,10,-10,10,-10,0,0.6,0.3,0.1);
-	rectangle(0,10,0,20,10,20,10,10,0.6,0.3,0.1);
-	rectangle(20,10,20,20,30,20,30,10,0.6,0.3,0.1);
-	rectangle(10,0,10,10,20,10,20,0,0.6,0.3,0.1);
-	rectangle(30,0,30,10,40,10,40,0,0.6,0.3,0.1);
-	rectangle(-20,0,-20,10,-30,10,-30,0,0.6,0.3,0.1);
-	triangle(-20,35,5,100,45,35,0.6,0.5,0);
-	triangle(0,35,25,90,60,35,0.6,0.8,0.2);
-	rectangle(-20,0,-25,-10,-20,-10,-10,0,0.0,0.0,0.0);
-	rectangle(30,0,23,-15,28,-15,35,0,0,0,0);
-	rectangle(-35,0,-35,15,-60,15,-60,0,0.6,0.4,0);
-	triangle(-60,15,-50,25,-50,0,0.6,0.4,0);
-	rectangle(-50,15,-50,25,-35,25,-35,15,0.6,0.4,0);
-	black_line(-60,15,-50,15);
-	rectangle(-50,20,-50,24,-53,24,-53,20,0,0,0);
+	rectangle(0+i,20,0+i,30,-10+i,30,-10+i,20,0.6,0.3,0.1);
+	
+	glEnd();	
+	rectangle(10+i,20,10+i,30,20+i,30,20+i,20,0.6,0.3,0.1);
+	rectangle(-10+i,10,-10+i,20,-20+i,20,-20+i,10,0.6,0.3,0.1);
+	rectangle(0+i,0,0+i,10,-10+i,10,-10+i,0,0.6,0.3,0.1);
+	rectangle(0+i,10,0+i,20,10+i,20,10+i,10,0.6,0.3,0.1);
+	rectangle(20+i,10,20+i,20,30+i,20,30+i,10,0.6,0.3,0.1);
+	rectangle(10+i,0,10+i,10,20+i,10,20+i,0,0.6,0.3,0.1);
+	rectangle(30+i,0,30+i,10,40+i,10,40+i,0,0.6,0.3,0.1);
+	rectangle(-20+i,0,-20+i,10,-30+i,10,-30+i,0,0.6,0.3,0.1);
+	triangle(-40+i,35,5+i,100,45+i,35,0.6,0.5,0);
+	triangle(0+i,35,25+i,90,60+i,35,0.6,0.8,0.2);
+	
+	rectangle(-20+i,0,-25+i,-10,-20+i,-10,-10+i,0,0.0,0.0,0.0);
+	rectangle(30+i,0,23+i,-15,28+i,-15,35+i,0,0,0,0);
+	
+
+	rectangle(-20+i,0,-25+i,-10,-20+i,-10,-10+i,0,0.0,0.0,0.0);
+	rectangle(30+i,0,23+i,-15,28+i,-15,35+i,0,0,0,0);
+	rectangle(-35+i,0,-35+i,15,-60+i,15,-60+i,0,0.6,0.4,0);
+	triangle(-60+i,15,-50+i,25,-50+i,0,0.6,0.4,0);
+	rectangle(-50+i,15,-50+i,25,-35+i,25,-35+i,15,0.6,0.4,0);
+	black_line(-60+i,15,-50+i,15);
+	rectangle(-50+i,20,-50+i,24,-53+i,24,-53+i,20,0,0,0);
 	glBegin(GL_POLYGON);
 	glColor3f(0.6,0.4,0);
-	glVertex2f(-60,0);
-	glVertex2f(-61,2);
-	glVertex2f(-61,3);
-	glVertex2f(-62,4);
-	glVertex2f(-62,6);
-	glVertex2f(-63,7);
-	glVertex2f(-63,8);
-	glVertex2f(-63,9);
-	glVertex2f(-63,10);
-	glVertex2f(-62,11);
-	glVertex2f(-62,12);
-	glVertex2f(-61,14);
-	glVertex2f(-60,15);
+	glVertex2f(-60+i,0);
+	glVertex2f(-61+i,2);
+	glVertex2f(-61+i,3);
+	glVertex2f(-62+i,4);
+	glVertex2f(-62+i,6);
+	glVertex2f(-63+i,7);
+	glVertex2f(-63+i,8);
+	glVertex2f(-63+i,9);
+	glVertex2f(-63+i,10);
+	glVertex2f(-62+i,11);
+	glVertex2f(-62+i,12);
+	glVertex2f(-61+i,14);
+	glVertex2f(-60+i,15);
 	glEnd();
-	 glFlush();
-}	
+	}
+	else
+		i=100;
+	
+	
+	 int k;
+	 float m=0;
+	 m+=0.001;
+	 for(k=0;k<600;k++)
+	 {
+
+	 int max=100,min=-100;
+	 int max2=0,min2=-100;
+	 int x1=rand()%(max-min)+min;
+	 int y1=rand()%(max2-min2)+min2;
+	 glColor3f(0,0,1);
+	 if(m>-100)
+	 {
+	  glBegin(GL_POINTS);
+	  glVertex2f(x1,y1);
+	  glEnd();
+	  
+	 }
+	 else
+		m=0;
+	glutPostRedisplay();
+	
+	  glFlush();
+	 }
+}
+void pdisp()
+{
+glClear(GL_COLOR_BUFFER_BIT);	
+float d;
+	i-=0.1;
+	if(i>(-100))
+
+	{
+		
+	glBegin(GL_POINTS);
+	glColor3f(0,0,1);
+	glVertex2f(10+i,0);
+	glEnd();
+	glFlush();
+
+	}
+	else
+		i=0;
+	glutPostRedisplay();
+
+}
+	

@@ -85,7 +85,19 @@ LINK32=link.exe
 # PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
 
+SOURCE=.\budda.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\certificate.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\components.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\keynavigation.cpp
 # End Source File
 # Begin Source File
 
@@ -106,6 +118,10 @@ SOURCE=.\main.cpp
 # Begin Source File
 
 SOURCE=.\rectangle.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\vamana.cpp
 # End Source File
 # End Group
 # Begin Group "Header Files"

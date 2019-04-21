@@ -5,6 +5,8 @@
 #include"FUNCTIONS.h"
 #include <stdlib.h> 
 	float i;
+
+
 void koormadisp()
 {
 //	glClear(GL_COLOR_BUFFER_BIT);
@@ -58,7 +60,9 @@ void koormadisp()
 	triangle(-60+i,15,-50+i,25,-50+i,0,0.6,0.4,0);
 	rectangle(-50+i,15,-50+i,25,-35+i,25,-35+i,15,0.6,0.4,0);
 	black_line(-60+i,15,-50+i,15);
-	rectangle(-50+i,20,-50+i,24,-53+i,24,-53+i,20,0,0,0);
+	//eye
+rectangle(-50+i,20,-50+i,24,-53+i,24,-53+i,20,0,0,0);
+
 	glBegin(GL_POLYGON);
 	glColor3f(0.6,0.4,0);
 	glVertex2f(-60+i,0);
@@ -101,29 +105,9 @@ void koormadisp()
 	 else
 		m=0;
 	glutPostRedisplay();
-	
+	glutKeyboardFunc(keys);
 	  glFlush();
 	 }
 }
-void pdisp()
-{
-glClear(GL_COLOR_BUFFER_BIT);	
-float d;
-	i-=0.1;
-	if(i>(-100))
 
-	{
-		
-	glBegin(GL_POINTS);
-	glColor3f(0,0,1);
-	glVertex2f(10+i,0);
-	glEnd();
-	glFlush();
-
-	}
-	else
-		i=0;
-	glutPostRedisplay();
-
-}
 	

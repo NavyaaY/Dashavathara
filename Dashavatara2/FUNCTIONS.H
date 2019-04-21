@@ -11,4 +11,10 @@ void boundary_rectangle(float x1,float x2,float y1,float y2,float z1,float z2,fl
 void fish(float x1,float x2,float y1,float y2,float z1,float z2,float m1,float m2);
 void koormadisp();
 void krishdisp();
+void display(void);
+void keys(unsigned char key1,int x,int y);
+void myInit2();
+void vamanadisplay();
+void circle(float r);
+void buddadisp();
 #endif

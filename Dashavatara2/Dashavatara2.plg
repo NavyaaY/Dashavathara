@@ -6,17 +6,21 @@
 --------------------Configuration: Dashavatara2 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\user\AppData\Local\Temp\RSP8076.tmp" with contents
+Creating temporary file "C:\Users\user\AppData\Local\Temp\RSPD669.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Dashavatara2.pdb" /debug /machine:I386 /out:"Debug/Dashavatara2.exe" /pdbtype:sept 
+.\Debug\budda.obj
+.\Debug\certificate.obj
 .\Debug\components.obj
+.\Debug\keynavigation.obj
 .\Debug\koorma.obj
 .\Debug\krish.obj
 .\Debug\line.obj
 .\Debug\main.obj
 .\Debug\rectangle.obj
+.\Debug\vamana.obj
 ]
-Creating command line "link.exe @C:\Users\user\AppData\Local\Temp\RSP8076.tmp"
+Creating command line "link.exe @C:\Users\user\AppData\Local\Temp\RSPD669.tmp"
 <h3>Output Window</h3>
 Linking...
 

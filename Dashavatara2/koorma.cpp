@@ -105,7 +105,7 @@ rectangle(-50+i,20,-50+i,24,-53+i,24,-53+i,20,0,0,0);
 	 else
 		m=0;
 	glutPostRedisplay();
-	glutKeyboardFunc(keys);
+	glutKeyboardFunc(keys1);
 	  glFlush();
 	 }
 }

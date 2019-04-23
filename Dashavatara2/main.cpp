@@ -4,7 +4,6 @@
 #include <stdlib.h> 
 #include <math.h>
 
-
 void myInit()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -32,8 +31,9 @@ void main(int argc,char **argv)
 	glutInitWindowPosition(0,0);
 	glutInitWindowSize(50,50);
 	glutCreateWindow("Certificate");
-	glutDisplayFunc(krishdisp);
+	glutFullScreen();
+	glutDisplayFunc(display);
 	glutKeyboardFunc(keys);
-	myInit2();
+	myInit();
 	glutMainLoop();
 }

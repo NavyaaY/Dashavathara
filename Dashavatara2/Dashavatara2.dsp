@@ -97,6 +97,10 @@ SOURCE=.\components.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\intro.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\keynavigation.cpp
 # End Source File
 # Begin Source File
@@ -114,6 +118,14 @@ SOURCE=.\line.cpp
 # Begin Source File
 
 SOURCE=.\main.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\narasimhadisp.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\parashu.cpp
 # End Source File
 # Begin Source File
 

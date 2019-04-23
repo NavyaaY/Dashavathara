@@ -13,8 +13,13 @@ void koormadisp();
 void krishdisp();
 void display(void);
 void keys(unsigned char key1,int x,int y);
+void keys1(unsigned char key1,int x,int y);
 void myInit2();
 void vamanadisplay();
 void circle(float r);
 void buddadisp();
+void narasimhadisp();
+void parashudisplay();
+void introduction();
+void thankyou();
 #endif
